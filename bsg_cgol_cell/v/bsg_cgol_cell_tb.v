@@ -80,7 +80,7 @@ module bsg_cgol_cell_tb;
     end
   end
 
-  trace_rom #(.width_p(13),.addr_width_p(32))
+  trace_rom #(.width_p(14),.addr_width_p(32))
     ROM
       (.addr_i( rom_addr_li )
       ,.data_o( rom_data_lo )
