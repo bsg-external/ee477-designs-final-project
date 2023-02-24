@@ -3,7 +3,6 @@
 synthesis.inputs.input_files: [
   "v/bsg_cgol_cell.v",
    # TODO: Add any additional BSG files needed
-  "${bsg_root}/bsg_misc/bsg_popcount.v",
 ]
 synthesis.inputs.input_files_meta: [append, subst]
 
