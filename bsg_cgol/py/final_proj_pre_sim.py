@@ -150,8 +150,10 @@ def main():
   print()
 
   # Print performancs stats
+
   print('CGoL script performance: (measured with "checks=last" games only)')
   print(f'   Computed and saved a total of {cgol_iterations} CGoL frames of size {width}x{width} over {cgol_elapsed_time:.3f} seconds')
+  if cgol_elapsed_time==0 : cgol_elapsed_time = float('nan') # Handle case where there were no 'last' games
   print(f'   Average performance {cgol_iterations/cgol_elapsed_time:.3f} frames/second')
   print()
 
