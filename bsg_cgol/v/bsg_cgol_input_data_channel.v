@@ -2,7 +2,7 @@ module bsg_cgol_input_data_channel #(
    parameter `BSG_INV_PARAM(board_width_p)
   ,parameter `BSG_INV_PARAM(max_game_length_p)
   ,localparam num_total_cells_lp = board_width_p*board_width_p
-  ,localparam game_length_width_lp=`BSG_SAFE_CLOG2(max_game_length_p)
+  ,localparam game_length_width_lp=`BSG_SAFE_CLOG2(max_game_length_p+1)
 ) (
      input clk_i
     ,input reset_i
